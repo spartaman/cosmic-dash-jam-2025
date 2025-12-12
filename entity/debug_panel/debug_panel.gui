@@ -29,7 +29,7 @@ nodes {
   id: "properties_panel"
   parent: "root"
   inherit_alpha: true
-  template: "/druid/widget/properties_panel/properties_panel.gui"
+  template: "/widget/properties_panel/properties_panel.gui"
 }
 nodes {
   type: TYPE_BOX
@@ -730,7 +730,7 @@ nodes {
   id: "property_entity_prefab"
   parent: "root"
   inherit_alpha: true
-  template: "/decore/properties_panel/property_entity_prefab.gui"
+  template: "/widget/debug_page_decore/properties_panel/property_entity_prefab.gui"
   enabled: false
 }
 nodes {
@@ -790,7 +790,7 @@ nodes {
   id: "property_system"
   parent: "root"
   inherit_alpha: true
-  template: "/decore/properties_panel/property_system.gui"
+  template: "/widget/debug_page_decore/properties_panel/property_system.gui"
   enabled: false
 }
 nodes {
@@ -937,7 +937,7 @@ nodes {
   id: "memory_panel"
   parent: "SE_Anchor"
   inherit_alpha: true
-  template: "/druid/widget/memory_panel/memory_panel.gui"
+  template: "/widget/memory_panel/memory_panel.gui"
 }
 nodes {
   type: TYPE_BOX
@@ -1042,7 +1042,7 @@ nodes {
   id: "fps_panel"
   parent: "SE_Anchor"
   inherit_alpha: true
-  template: "/druid/widget/fps_panel/fps_panel.gui"
+  template: "/widget/fps_panel/fps_panel.gui"
 }
 nodes {
   type: TYPE_BOX

@@ -14,6 +14,7 @@ dependencies#5 = https://github.com/Insality/defold-lang/archive/refs/heads/deve
 dependencies#6 = https://github.com/Insality/defold-log/archive/refs/tags/6.zip
 dependencies#7 = https://github.com/Insality/defold-event/archive/refs/tags/13.zip
 dependencies#8 = https://github.com/Insality/druid/archive/refs/heads/develop.zip
+dependencies#9 = https://github.com/Insality/asset-store/archive/refs/tags/1.zip
 
 [bootstrap]
 main_collection = /loader.collectionc

@@ -1,12 +1,14 @@
 local lang = require("lang.lang")
 local world = require("game.world")
 local decore = require("decore.decore")
-local saver_debug_page = require("saver.saver_debug_page")
-local memory_panel = require("druid.widget.memory_panel.memory_panel")
-local fps_panel = require("druid.widget.fps_panel.fps_panel")
 
+local memory_panel = require("widget.memory_panel.memory_panel")
+local fps_panel = require("widget.fps_panel.fps_panel")
+local properties_panel = require("widget.properties_panel.properties_panel")
 
-local properties_panel = require("druid.widget.properties_panel.properties_panel")
+local saver_debug_page = require("widget.debug_page_saver.debug_page_saver")
+local lang_debug_page = require("widget.debug_page_lang.debug_page_lang")
+local decore_debug_page = require("widget.debug_page_decore.debug_page_decore")
 
 ---@class widget.debug_panel: druid.widget
 local M = {}
@@ -35,7 +37,7 @@ function M:init()
 		button:set_text_property("Lang")
 		button:set_text_button("Open")
 		button.button.on_click:subscribe(function()
-			lang.render_properties_panel(self.druid, self.properties_panel)
+			lang_debug_page.render_properties_panel(lang, self.druid, self.properties_panel)
 		end)
 	end)
 
@@ -43,7 +45,7 @@ function M:init()
 		button:set_text_property("Decore")
 		button:set_text_button("Open")
 		button.button.on_click:subscribe(function()
-			decore.render_properties_panel(world, self.druid, self.properties_panel)
+			decore_debug_page.render_properties_panel(world, self.druid, self.properties_panel)
 		end)
 	end)
 
